@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+@import "md-colors.scss";
+
+$bg-color: #FFFFFF;
+$text-color: #212121;
+
+:root {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 10pt;
+    line-height: 1.5;
+    color: $text-color;
+}
+
+html {
+    background-color: #FFFFFF;
+}
+
+body {
+    width: 210mm;
+    height: 297mm;
+    background-color: $bg-color;
+
+    margin: 10mm auto;
+    box-shadow: 0 32px 64px -32px rgba($color: #000000, $alpha: 0.5);
+
+    @media print {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+
+    div {
+        font-size: 1.5rem;
+        color: $md-light-text-secondary;
+    }
+
+}
+
+main h2 {
+    font-size: 1.2rem;
+    padding: 0.3rem 0;
+    $border-color: $md-blue-grey-900;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+
+    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 1rem 0 0.4rem 0;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0.8rem 0 0.2rem 0;
+    display: inline-block;
+    line-height: 0.5;
+    border-bottom: 0.3rem solid $md-blue-grey-200;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+
+hr {
+    margin: 1.5rem 0;
+    height: 1px;
+    border: none;
+
+    &+* {
+        margin-top: 0;
+    }
+}
+
+a {
+    color: $md-blue-grey-700;
+}
+
+p,
+ul,
+table {
+    margin: 0;
+
+    &+p,
+    &+ul,
+    &+table {
+        margin-top: 0.5rem;
+    }
+}
+
+p+p {
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 30px;
+}
+
+table {
+    &.align {
+        tbody th {
+            text-align: left;
+        }
+
+        th,
+        td {
+            font-weight: normal;
+
+            padding: 0 .5rem;
+
+            &:first-child {
+                padding: 0 .5rem 0 0;
+            }
+
+            &:last-child {
+                padding: 0 0 0 .5rem;
+            }
+        }
+    }
+}
+
+.ml {
+    margin-left: 1rem;
+}
+
+.ml2 {
+    margin-left: 2rem;
+}
+
+.columns-2 {
+    display: grid;
+    grid-template-columns: calc(50% - 16px) calc(50% - 16px);
+
+    >.column {
+        padding: 0.5rem 0;
+
+        &:first-child {
+            border-right: 1px solid $md-blue-grey-100;
+            padding-right: 15px;
+        }
+
+        &:last-child {
+            padding-left: 16px;
+        }
+    }
+}
