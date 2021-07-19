@@ -15,8 +15,8 @@ body {
   height: 297mm;
   background-color: #FFFFFF;
   margin: 10mm auto;
-  -webkit-box-shadow: 0 32px 64px -32px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 32px 64px -32px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 8px 64px -32px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 8px 64px -32px rgba(0, 0, 0, 0.5);
 }
 
 @media print {
@@ -38,7 +38,7 @@ h1 div {
   color: rgba(255, 255, 255, 0.7);
 }
 
-main h2 {
+h2 {
   font-size: 1.2rem;
   padding: 0.3rem 0;
   border-top: 1px solid #263238;
@@ -48,7 +48,7 @@ main h2 {
   margin-bottom: 1rem;
 }
 
-main h2:first-child {
+h2:first-child {
   margin-top: 0;
 }
 
