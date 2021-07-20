@@ -34,3 +34,6 @@ HTMLとCSSを使ってPDFに変換するためのテンプレート。
 ### カスタムCSS
 
 `css/user.scss` にカスタムSCSSを追加できる。
+
+## License
+MIT
