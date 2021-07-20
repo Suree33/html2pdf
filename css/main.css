@@ -668,9 +668,4 @@ table.align td:last-child {
 .columns-2 > .column:last-child {
   padding-left: 16px;
 }
-
-.page {
-  --page-bg-color: #FFFFFF;
-  --page-text-color: #212121;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
