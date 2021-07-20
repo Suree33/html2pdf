@@ -1,5 +1,7 @@
 # html2pdf
 
+![GitHub](https://img.shields.io/github/license/Suree33/html2pdf?style=flat-square)
+
 HTMLとCSSを使ってPDFに変換するためのテンプレート。
 
 ![image](https://user-images.githubusercontent.com/42645594/126158796-12da7385-4f5b-4b13-ab7b-f82787f4c1bf.png)
