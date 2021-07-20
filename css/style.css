@@ -353,7 +353,7 @@ html {
   background-color: #FFFFFF;
 }
 
-body {
+.page {
   width: 210mm;
   height: 297mm;
   background-color: #FFFFFF;
@@ -363,7 +363,7 @@ body {
 }
 
 @media print {
-  body {
+  .page {
     margin: 0;
     padding: 0;
     -webkit-box-shadow: none;
