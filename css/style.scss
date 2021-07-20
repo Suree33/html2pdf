@@ -1,28 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 @import "normalize.scss";
 @import "md-colors.scss";
+@import "paper-size.scss";
 
-$bg-color: #FFFFFF;
-$text-color: #212121;
 
 :root {
+    --ui-bg-color: #FFFFFF;
+    --ui-text-color: #212121;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 10pt;
     line-height: 1.5;
-    color: $text-color;
-}
+    background-color: var(--ui-bg-color);
+    color: var(--ui-text-color);
 
-html {
-    background-color: #FFFFFF;
+    @media (prefers-color-scheme: light) {
+        --ui-bg-color: #FFFFFF;
+        --ui-text-color: #212121;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        --ui-bg-color: #212121;
+        --ui-text-color: #FAFAFA;
+    }
 }
 
 .page {
-    width: 210mm;
-    height: 297mm;
-    background-color: $bg-color;
+    --page-bg-color: #FFFFFF;
+    --page-text-color: #212121;
+    background-color: var(--page-bg-color);
+    color: var(--page-text-color);
 
     margin: 10mm auto;
-    box-shadow: 0 8px 64px -32px rgba($color: #000000, $alpha: 0.5);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 
     @media print {
         margin: 0;
