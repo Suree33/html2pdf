@@ -1,0 +1,155 @@
+// default: a4
+
+.page {
+    --width: 210mm;
+    --height: 297mm;
+    width: var(--width);
+    height: var(--height);
+
+    // Orientation
+    &.portrait {
+        width: var(--width);
+        height: var(--height);
+    }
+
+    &.landscape {
+        width: var(--height);
+        height: var(--width);
+    }
+
+    @media print {
+        --width: 100vw;
+        --height: 100vh;
+    }
+
+    // Size
+    // A
+    &.a0 {
+        --width: 841mm;
+        --height: 1189mm;
+    }
+
+    &.a1 {
+        --width: 594mm;
+        --height: 841mm;
+    }
+
+    &.a2 {
+        --width: 420mm;
+        --height: 594mm;
+    }
+
+    &.a3 {
+        --width: 297mm;
+        --height: 420mm;
+    }
+
+    &.a4 {
+        --width: 210mm;
+        --height: 297mm;
+    }
+
+    &.a5 {
+        --width: 148mm;
+        --height: 210mm;
+    }
+
+    &.a6 {
+        --width: 105mm;
+        --height: 148mm;
+    }
+
+    &.a7 {
+        --width: 74mm;
+        --height: 105mm;
+    }
+
+    &.a8 {
+        --width: 52mm;
+        --height: 74mm;
+    }
+
+    &.a9 {
+        --width: 37mm;
+        --height: 52mm;
+    }
+
+    &.a10 {
+        --width: 26mm;
+        --height: 37mm;
+    }
+
+
+    // B
+    &.b0 {
+        --width: 1030mm;
+        --height: 1456mm;
+    }
+
+    &.b1 {
+        --width: 728mm;
+        --height: 1030mm;
+    }
+
+    &.b2 {
+        --width: 515mm;
+        --height: 728mm;
+    }
+
+    &.b3 {
+        --width: 364mm;
+        --height: 515mm;
+    }
+
+    &.b4 {
+        --width: 257mm;
+        --height: 364mm;
+    }
+
+    &.b5 {
+        --width: 182mm;
+        --height: 257mm;
+    }
+
+    &.b6 {
+        --width: 128mm;
+        --height: 182mm;
+    }
+
+    &.b7 {
+        --width: 91mm;
+        --height: 128mm;
+    }
+
+    &.b8 {
+        --width: 64mm;
+        --height: 91mm;
+    }
+
+    &.b9 {
+        --width: 45mm;
+        --height: 64mm;
+    }
+
+    &.b10 {
+        --width: 32mm;
+        --height: 45mm;
+    }
+
+
+    // Others
+    .letter {
+        --width: 215.9mm;
+        --height: 279.4mm;
+    }
+
+    .legal {
+        --width: 215.9mm;
+        --height: 355.6mm;
+    }
+
+    .tabloid {
+        --width: 279.4mm;
+        --height: 431.8mm;
+    }
+}
