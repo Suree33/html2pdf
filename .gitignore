@@ -6,6 +6,8 @@
 *.css.map
 *.sass.map
 *.scss.map
+*.css
+!style.css
 
 ### VisualStudioCode ###
 .vscode/*
